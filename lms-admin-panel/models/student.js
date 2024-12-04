@@ -5,5 +5,4 @@ const StudentSchema = new mongoose.Schema({
   email: String,
   enrolledCourses: [String],
 });
-
 export default mongoose.models.Student || mongoose.model('Student', StudentSchema);
